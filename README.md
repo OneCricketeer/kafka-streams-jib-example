@@ -6,7 +6,7 @@ The following tutorial requires installation of `docker-compose`.
 
 If `docker-compose` is unavailable, Kafka and Zookeeper can be started locally. 
 
-The following steps can be used to run this application locally after creating the input and output topic, and producing `[lipsum.txt](lipsum.txt)` into the input topic (copy the executed commands from below, switching the Docker container names for `localhost`).  
+The following steps can be used to run this application locally after creating the input and output topic, and producing [`lipsum.txt`](lipsum.txt) into the input topic (copy the executed commands from below, switching the Docker container names for `localhost`).  
 
 ```bash
 export BOOTSTRAP_SERVERS=localhost:9092  # Assumes Kafka default port
@@ -105,5 +105,3 @@ docker network ls | grep $(basename `pwd`) | awk '{print $2}' | xargs docker net
 Learn [more about Jib](https://github.com/GoogleContainerTools/jib).
 
 Learn [more about Apache Kafka & Kafka Streams](http://kafka.apache.org/documentation).
-
-[![Analytics](https://cloud-tools-for-java-metrics.appspot.com/UA-121724379-2/examples/kafka-streams)](https://github.com/igrigorik/ga-beacon)
